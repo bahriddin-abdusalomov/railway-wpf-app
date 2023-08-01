@@ -1,0 +1,151 @@
+﻿<Window x:Class="RailWayWpfApp.Windows.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RailWayWpfApp.Windows"
+        mc:Ignorable="d"
+        Title="Register" Height="600" Width="510">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\USER\Desktop\2-Oy-Imtihon\RailWayWpfApp\Assets\Images\login-backround-image.jpg"/>
+    </Window.Background>
+
+    <Border Margin="30 50"
+        Background="Black"
+        Opacity="0.6"
+        CornerRadius="10">
+
+        <StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Image Source="C:\Users\USER\Desktop\2-Oy-Imtihon\RailWayWpfApp\Assets\Images\uz-t-logo.png"
+                        Height="60"
+                        Width="50"
+                        Margin="20 10 10 10"/>
+                <StackPanel>
+                    <Label Content="O'ZBEKISTON TEMIR YO'LLARI"
+                        Foreground="White"
+                        FontWeight="Bold"
+                        Margin="0 10 0 0"/>
+                    <Label Content="AKSIYADORLIK JAMIYATI"
+                            Foreground="White" Height="28"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel>
+
+                <TextBlock Height="26"
+                           Foreground="White"
+                           Text="RO'YXATDAN O'TISH"
+                           FontWeight="Bold"
+                           FontSize="20"
+                           Margin="10"
+                           HorizontalAlignment="Center"/>
+
+
+                <Border Margin="20 10 20 10"
+                    Background="#FEFEFE"
+                    BorderBrush="White"
+                    Height="50"
+                    CornerRadius="5">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="tbEmailOrPhone"
+                             Width="340"
+                             Margin="10 0 10 0"
+                             Padding="8"
+                             BorderThickness="0"
+                             FontSize="18"/>
+
+                        <Image Source="C:\Users\USER\Desktop\2-Oy-Imtihon\RailWayWpfApp\Assets\Images\icon-email.png"
+                               Height="25"
+                               />
+
+                    </StackPanel>
+
+                </Border>
+
+
+                <Border Margin="20 10 20 10"
+                    Background="#FEFEFE"
+                    BorderBrush="White"
+                    Height="50"
+                    CornerRadius="5">
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBox x:Name="tbPassword"
+                             Width="342"
+                             Margin="10 0 10 0"
+                             Padding="8"
+                             BorderThickness="0"                
+                             FontSize="18"/>
+
+                        <Image Source="C:\Users\USER\Desktop\2-Oy-Imtihon\RailWayWpfApp\Assets\Images\padlock.png"
+                               Height="25"
+                               />
+                    </StackPanel>
+
+                </Border>
+
+
+                <Border Margin="20 10 20 10"
+                    Background="#FEFEFE"
+                    BorderBrush="White"
+                    Height="50"
+                    CornerRadius="5">
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBox x:Name="tbRepeatPassword"
+                             Width="342"
+                             Margin="10 0 10 0"
+                             Padding="8"
+                             BorderThickness="0"                
+                             FontSize="18"/>
+
+                        <Image Source="C:\Users\USER\Desktop\2-Oy-Imtihon\RailWayWpfApp\Assets\Images\password.png"
+                               Height="25"
+                               />
+                    </StackPanel>
+
+                </Border>
+
+
+
+
+                <Button x:Name="btnRegister"
+                            Content="RO'YXATDAN O'TISH"
+                            Height="50"
+                            FontSize="22"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Margin="20 10"
+                            Background="#2929ED" Click="Register_Click"/>
+
+
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnRoyxatdanOtganmisiz"
+                            Height="35"
+                            Width="220"
+                            FontSize="18"
+                            Margin="10 0"
+                            BorderThickness="0"
+                            Content="Ro'yxatdan o'tganmisiz"
+                            Background="Black"
+                            Foreground="Blue" Click="btnRoyxatdanOtganmisiz_Click"/>
+
+                    <Button x:Name="btnLogin"
+                            Height="30"
+                            Width="170"
+                            FontSize="18"
+                            Margin="60 0"
+                            BorderThickness="0"
+                            Content="Kirish"
+                            Background="Black"
+                            Foreground="Blue" Click="btnLogin_Click"/>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+    </Border>
+</Window>

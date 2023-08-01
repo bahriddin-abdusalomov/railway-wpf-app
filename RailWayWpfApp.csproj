@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\free-icon-user.png" />
+    <None Remove="Assets\Images\icon-email.png" />
+    <None Remove="Assets\Images\login-image.jpg" />
+    <None Remove="Assets\Images\main-window-image.jpg" />
+    <None Remove="Assets\Images\padlock.png" />
+    <None Remove="Assets\Images\password.png" />
+    <None Remove="Assets\Images\to-where-image.png" />
+    <None Remove="Assets\Images\train-table-clock.png" />
+    <None Remove="Assets\Images\uz-t-logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\free-icon-user.png" />
+    <Resource Include="Assets\Images\icon-email.png" />
+    <Resource Include="Assets\Images\login-image.jpg" />
+    <Resource Include="Assets\Images\main-window-image.jpg" />
+    <Resource Include="Assets\Images\padlock.png" />
+    <Resource Include="Assets\Images\password.png" />
+    <Resource Include="Assets\Images\to-where-image.png" />
+    <Resource Include="Assets\Images\train-table-clock.png" />
+    <Resource Include="Assets\Images\uz-t-logo.png" />
+  </ItemGroup>
+
+</Project>
